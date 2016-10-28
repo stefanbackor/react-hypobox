@@ -1,0 +1,4 @@
+excludeInFolderSearch = "{$excludeInFolderSearch,$extraExcludes,node_modules}"
+softWrap = false
+tabSize = 2
+softTabs = true

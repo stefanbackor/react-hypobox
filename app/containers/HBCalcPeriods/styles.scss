@@ -1,0 +1,61 @@
+p {
+  padding: 0;
+}
+
+.paper {
+  position: relative !important;
+  padding: 1em !important;
+  margin: 0.5em -1em !important;
+}
+
+.paperHeader {
+  color: black !important;
+  padding: 0 !important;
+  line-height: inherit !important;
+  font-weight: bold !important;
+}
+
+.regularInput,
+.importantInput {
+  /*  width: 33.3% !important; */
+  @media only screen and (min-width: 800px) {
+    width: 25% !important;
+  }
+}
+
+.regularInput label,
+.importantInput label {
+  white-space: nowrap;
+}
+
+.regularInput input,
+.importantInput input {
+  /*  width: auto !important; */
+  /*  display: inline-block !important; */
+}
+
+.importantInput input {
+  font-weight: bold !important;
+}
+
+.paperBottom {
+  text-align: right;
+  color: rgba(0,0,0,0.5);
+  button span {
+    // font-weight: bold !important;
+    font-size: 12px !important;
+  }
+}
+
+.closePaperIcon {
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

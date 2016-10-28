@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sk" manifest="/appcache/manifest.appcache">
+  <head>
+    <!-- The first thing in any HTML file should be the charset -->
+    <meta charset="utf-8">
+    <!-- Make the page mobile compatible -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Allow installing the app to the homescreen -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    
+    <title>HypoBox - priebeh hypotéky</title>
+  </head>
+  <body>
+    <!-- The app hooks into this div -->
+    <div id="app"></div>
+    
+    <!-- Open Sans Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
+    <!-- <style type="text/css" media="screen">
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src:
+        local('Open Sans'),
+        local('OpenSans'),
+        url('/open-sans-v13-latin-regular.woff2') format('woff2'),
+        url('/open-sans-v13-latin-regular.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      src:
+        local('Open Sans Bold'),
+        local('OpenSans-Bold'),
+        url('/open-sans-v13-latin-700.woff2') format('woff2'),
+        url('/open-sans-v13-latin-700.woff') format('woff');
+    }
+    </style> -->
+    <!-- Roboto Font -->
+    <!-- ><link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> -->
+    <style type="text/css" media="screen">
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      src:
+        local('Roboto'),
+        local('Roboto-Regular'),
+        url('/roboto-v15-latin-regular.woff2') format('woff2'),
+        url('/roboto-v15-latin-regular.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      src:
+        local('Roboto Bold'),
+        local('Roboto-Bold'),
+        url('/roboto-v15-latin-700.woff2') format('woff2'),
+        url('/roboto-v15-latin-700.woff') format('woff');
+    }
+    </style>
+    <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
+  </body>
+</html>

@@ -1,0 +1,5 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Renew raz za 2 mesiace
+48 3    1 */2 *    root    /home/pedant/www/backor.sk/projekty/react-hypobox/_etc/letsencrypt/./cron_ssl_renew_certificates.sh > /dev/null 2>&1
