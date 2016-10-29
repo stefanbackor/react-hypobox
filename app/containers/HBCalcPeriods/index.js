@@ -166,17 +166,17 @@ export class HBCalcPeriods extends React.Component {
             />
             <TextField
               disabled={false}
-              floatingLabelText="Zaplatené istiny (€)"
-              floatingLabelFixed
-              className={styles.importantInput}
-              value={formatPrice(periodsSums.map((data) => data.kumulativneIstiny).reduce((a, b) => a + b, 0))}
-            />
-            <TextField
-              disabled={false}
               floatingLabelText="Zaplatené úroky (€)"
               floatingLabelFixed
               className={styles.importantInput}
               value={formatPrice(periodsSums.map((data) => data.kumulativneUroky).reduce((a, b) => a + b, 0))}
+            />
+            <TextField
+              disabled={false}
+              floatingLabelText="Zaplatené istiny (€)"
+              floatingLabelFixed
+              className={styles.importantInput}
+              value={formatPrice(periodsSums.map((data) => data.kumulativneIstiny).reduce((a, b) => a + b, 0))}
             />
           </Paper>
           :
