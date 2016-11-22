@@ -36,7 +36,7 @@ function App(props) {
         <A className={styles.logoWrapper} href="/">
           <Img className={styles.logo} style={{ maxWidth: '100%', width: '300px' }} src={Banner} alt="HypoBox - Logo" />
         </A>
-        <Navigation />
+        <Navigation current={props.location ? props.location.pathname : null} />
         {React.Children.toArray(props.children)}
         <Footer />
       </div>

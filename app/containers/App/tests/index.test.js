@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import React from 'react';
 
 import App from '../index';
+import Img from 'components/Img';
 import Footer from 'components/Footer';
 
 describe('<App />', () => {
@@ -10,7 +11,7 @@ describe('<App />', () => {
     const renderedComponent = shallow(
       <App />
     );
-    expect(renderedComponent.find('Img').length).toEqual(1);
+    expect(renderedComponent.find(Img).length).toEqual(1);
   });
 
   it('should render its children', () => {

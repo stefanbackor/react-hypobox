@@ -3,16 +3,19 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  text-transform: uppercase;
   
   li {
     padding: 0;
     display: inline-block;
     a {
       border-radius: 2px;
+      border:solid 1px #eaeaea;
       color: inherit;
       padding: 0.8em 1em;
+      text-decoration: none;
       &:hover,
-      .selected & {
+      &.selected {
         background-color: #eaeaea;
       }
     }
