@@ -1,6 +1,5 @@
 # Hypobox #
 
-* Hypobox je hypokalkulacka ktora umoznuje retazit viacere hypoteky a vypocitat tak celkovy naklad na uver. 
-* Hypobox je ReactJS one-page aplikacia.
+* Mortgage calculator able to chain multiple mortgages in time to display overall interest.
 
 Preview tu http://hypobox.backor.sk
